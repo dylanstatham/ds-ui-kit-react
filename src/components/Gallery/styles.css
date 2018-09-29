@@ -1,0 +1,14 @@
+.Gallery__row {
+  display: flex;
+}
+
+.Gallery__item {
+  flex: 1;
+  margin: 15px;
+}
+
+@media (max-width: 600px) {
+  .Gallery__row {
+    display: block;
+  }
+}
