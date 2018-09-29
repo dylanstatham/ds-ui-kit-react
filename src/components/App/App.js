@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="uk-container uk-margin-large-bottom">
-        <Gallery />
+        <Gallery rowCount={3} itemCount={5} />
       </div>
     );
   }
