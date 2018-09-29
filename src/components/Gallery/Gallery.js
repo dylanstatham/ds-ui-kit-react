@@ -2,15 +2,15 @@ import React from 'react';
 import './styles.css';
 
 const Gallery = props => {
-  const { images, columns } = props;
+  const { data, columns } = props;
 
-  const rem = images.length % columns;
-  const rowCount = images.length / columns + (rem === 0 ? 0 : 1);
+  const rem = data.length % columns;
+  const rowCount = data.length / columns + (rem === 0 ? 0 : 1);
 
   console.log('rowCount', rowCount);
   console.log('rem', rem);
   console.log('columns', columns);
-  console.log('images.length', images.length);
+  console.log('images.length', data.length);
 
   const renderRows = () => {
     const rows = [];
@@ -18,13 +18,15 @@ const Gallery = props => {
     for (let i = 0; i < rowCount; i++) {
       const items = [];
       for (let j = 0; j < columns; j++) {
-        items.push(
-          <div key={j}>
-            <div className="Gallery__item uk-card uk-card-default uk-card-body">
-              <img src={images[counter]} alt={images[counter]} />
+        if (data[counter])
+          items.push(
+            <div key={j}>
+              <div className="Gallery__item uk-card uk-card-default uk-card-body">
+                <img src={data[counter].src} alt={data[counter].alt} />
+              </div>
+              <p>{data[counter].text}</p>
             </div>
-          </div>
-        );
+          );
         counter++;
       }
       rows.push(
