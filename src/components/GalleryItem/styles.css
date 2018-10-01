@@ -3,3 +3,13 @@
   flex: 1;
   margin: 15px;
 }
+.GalleryItem__blurb {
+  color: #212529;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+.GalleryItem__duration {
+  padding-top: 7px;
+  font-size: 13px;
+}

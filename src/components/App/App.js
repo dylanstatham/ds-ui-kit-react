@@ -9,6 +9,7 @@ const galleryData = [
     alt: 'Phil Murray is great!',
     text:
       'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    duration: '9 mins',
   },
   {
     src:
@@ -16,6 +17,7 @@ const galleryData = [
     alt: 'Phil Murray is great!',
     text:
       'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    duration: '9 mins',
   },
   {
     src:
@@ -23,6 +25,7 @@ const galleryData = [
     alt: 'Phil Murray is great!',
     text:
       'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    duration: '9 mins',
   },
 ];
 
