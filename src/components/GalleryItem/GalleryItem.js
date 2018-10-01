@@ -7,7 +7,6 @@ const GalleryItem = ({ src, alt, text, duration }) => {
       <div className=" uk-card-body">
         <img src={src} alt={alt} />
         <div className="GalleryItem__blurb">{text}</div>
-
         <div className="uk-flex uk-flex-between">
           <div class="uk-button-group">
             <button class="uk-button uk-button-default">View</button>

@@ -31,6 +31,26 @@ const Gallery = props => {
   };
 
   const rows = renderRows();
-  return <div className="Gallery">{rows}</div>;
+  return (
+    <div className="Gallery">
+      <div className="Gallery__header uk-section">
+        <h1>Album example</h1>
+        <p>
+          Something short and leading about the collection below—its contents,
+          the creator, etc. Make it short and sweet, but not too short so folks
+          don't simply skip over it entirely.
+        </p>
+        <div>
+          <button class="uk-button uk-button-primary">
+            Main call to action
+          </button>
+          <button class="uk-button uk-button-secondary">
+            Secondary action
+          </button>
+        </div>
+      </div>
+      <div className="Gallery__items">{rows} </div>
+    </div>
+  );
 };
 export default Gallery;

@@ -1,3 +1,9 @@
+.Gallery__header {
+  max-width: 40rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .Gallery__row {
   display: flex;
 }
